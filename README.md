@@ -1,6 +1,6 @@
 # Python学习计划
 
-## 第一篇，初识python
+## 第一篇，[初识python](https://github.com/christopher-x/Rookie/blob/master/ex01.md)
 
 ## 第二篇，注释的使用
 
