@@ -14,8 +14,6 @@
 
 首先将用户输入的信息进行拼接，这里不采取过滤的方式来进行过滤用户输入的内容。
 
-
-
 ```
 #!/usr/bin/env python3
 #-*- coding:utf-8 -*-
@@ -33,7 +31,7 @@ def basecode () :
 
 	# 使用base64进行加密
 	encodestr = base64.b64encode(md5code.encode(encoding='utf-8'))
-	print ("你的新密码是:",encodestr[1:longer])
+	print ("你的新密码是:",encodestr[0:longer].decode('ASCII'))
 
 	# 使用base64进行解密
 	#decodestr = base64.b64decode(encodestr)
@@ -54,16 +52,13 @@ def password (longer) :
 
 	print (f'你的普通密码是：{sum1[0:longer]}')
 
-
 def finished():
-	y = input ("生成成功，是否退出程序？ 输入y退出，否则程序将继续运行")
+	y = input ("生成成功，是否退出程序？ 输入y退出，否则程序将继续运行\n>")
 	if y == 'y' or y =="Y" or y =="YES" or y == 'yes' :
 		sys.exit()
 	else :
 		print('程序继续运行')
 	
-
-
 # 代码开始执行
 if __name__ =='__main__' :
 	flag = 1
@@ -99,13 +94,12 @@ if __name__ =='__main__' :
 			else:
 				break
 
-
 		if choose == '1' :
 			basecode()
 			finished()
 
 		elif choose == '2' :
-			newhash = hash(md5code)
+			newhash = str(hash(md5code))
 			print (newhash[0:longer])
 			finished()
 
@@ -114,8 +108,6 @@ if __name__ =='__main__' :
 			finished()
 		else :
 			print ("输入不正确，请重新输入")
-
-
 
 ```
 
