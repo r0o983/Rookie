@@ -84,4 +84,3 @@
 
 ## [第四十二章，对象，类，从属关系](https://github.com/christopher-x/Rookie/blob/master/ex42.md)
 
-## [第四十三章，基本的面向对象分析与设计](https://github.com/christopher-x/Rookie/blob/master/ex43.md)
