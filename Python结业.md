@@ -88,10 +88,10 @@ def pwd1():
 	# 创建一个空字符串，用于保存当前生成的随机数
 	sum1 = ''
 	# 设置种子随机数
-	random.seed(md5code)
+	#random.seed(md5code)
 	# 设置取值范围,将首字母锁定为大写字母
 	# Set the value range and lock the first letter to uppercase
-	abc = random.randint(65,90)
+	#abc = random.randint(65,90)
 	sum1 += chr(abc)
 
 	# 将字符串中的字符依次取出，并设置为种子随机数
@@ -343,11 +343,17 @@ if __name__ =='__main__' :
 
 ```
 
+结果：
+
+![image-20200425223232384](Python结业.assets/image-20200425223232384.png)
+
 ### 总结
 
+~~**终于写完了！！！**~~
 
+在完成基本功能的情况下增加了~~程序的健壮性~~，欢迎体验！。
 
-现在试着为普通密码加入更多的限制条件，如，必须有一个大写的首字母，必须含有小写字母，必须含有数字，和常见符号（常见可输入的符号，但不允许有 " ' （）/\）
+~~有一些额外的小bug，如果你发现了记得通知我。暂时我还没想到怎么解决。~~
 
 
 
