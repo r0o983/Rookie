@@ -92,7 +92,7 @@ def pwd1():
 	# 设置取值范围,将首字母锁定为大写字母
 	# Set the value range and lock the first letter to uppercase
 	#abc = random.randint(65,90)
-	sum1 += chr(abc)
+	#sum1 += chr(abc)
 
 	# 将字符串中的字符依次取出，并设置为种子随机数
 	# Take the characters in the string one by one and set them as seed random numbers
